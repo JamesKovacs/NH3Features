@@ -26,9 +26,22 @@ namespace Nh3Hacking {
 
             var sessionFactory = cfg.BuildSessionFactory();
 
+            Guid savedId;
             using(var session = sessionFactory.OpenSession())
             using(var tx = session.BeginTransaction()) {
-                // NHibernate code goes here
+                var dateTimeEntity = new DateTimeEntity();
+                session.Save(dateTimeEntity);
+                tx.Commit();
+                Console.WriteLine("Original entity:");
+                Console.WriteLine(dateTimeEntity);
+                savedId = dateTimeEntity.Id;
+            }
+
+            using(var session = sessionFactory.OpenSession())
+            using(var tx = session.BeginTransaction()) {
+                var dateTimeEntity = session.Load<DateTimeEntity>(savedId);
+                Console.WriteLine("Reloaded entity:");
+                Console.WriteLine(dateTimeEntity);
                 tx.Commit();
             }
 
