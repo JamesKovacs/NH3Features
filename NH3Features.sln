@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NH3Features", "NH3Features\NH3Features.csproj", "{14D6C809-9E06-4BB2-A2B9-BE969DADC338}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NH2Comparison", "NH2Comparison\NH2Comparison.csproj", "{17D4E446-D5F4-417E-A2EB-1957F765873B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{CEDB3B11-C5CB-4477-80F9-81AFF1C57AF4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +17,14 @@ Global
 		{14D6C809-9E06-4BB2-A2B9-BE969DADC338}.Debug|x86.Build.0 = Debug|x86
 		{14D6C809-9E06-4BB2-A2B9-BE969DADC338}.Release|x86.ActiveCfg = Release|x86
 		{14D6C809-9E06-4BB2-A2B9-BE969DADC338}.Release|x86.Build.0 = Release|x86
+		{17D4E446-D5F4-417E-A2EB-1957F765873B}.Debug|x86.ActiveCfg = Debug|x86
+		{17D4E446-D5F4-417E-A2EB-1957F765873B}.Debug|x86.Build.0 = Debug|x86
+		{17D4E446-D5F4-417E-A2EB-1957F765873B}.Release|x86.ActiveCfg = Release|x86
+		{17D4E446-D5F4-417E-A2EB-1957F765873B}.Release|x86.Build.0 = Release|x86
+		{CEDB3B11-C5CB-4477-80F9-81AFF1C57AF4}.Debug|x86.ActiveCfg = Debug|x86
+		{CEDB3B11-C5CB-4477-80F9-81AFF1C57AF4}.Debug|x86.Build.0 = Debug|x86
+		{CEDB3B11-C5CB-4477-80F9-81AFF1C57AF4}.Release|x86.ActiveCfg = Release|x86
+		{CEDB3B11-C5CB-4477-80F9-81AFF1C57AF4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
