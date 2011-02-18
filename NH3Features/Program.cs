@@ -9,6 +9,7 @@ using NHibernate.Criterion;
 using NHibernate.Dialect;
 using NHibernate.Linq;
 using NHibernate.Tool.hbm2ddl;
+using NHibernate.Transform;
 
 namespace Nh3Hacking {
     internal static class Program {
@@ -53,9 +54,9 @@ namespace Nh3Hacking {
 //                                select a;
 //                    var animal = query.Single();
 // NH3 HQL fails
-//                    var animal = session.CreateQuery("from a in AbstractAnimal where a.id = :id")
+//                    var animal = session.CreateQuery("from a in UnmappedAnimal where a.id = :id")
 //                                        .SetParameter("id", dogId)
-//                                        .UniqueResult<UnmappedAnimal>());
+//                                        .UniqueResult<UnmappedAnimal>();
 // NH3 Get/Load works
                     var animal = session.Get<UnmappedAnimal>(dogId);
                     Console.WriteLine(animal);
